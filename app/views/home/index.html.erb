@@ -14,3 +14,9 @@
   </div>  
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+
+<% @post.each do |p| %>
+  <%= p.title %>
+  <%= p.content %>
+  <%= image_tag(p.img_url) %>
+<% end %>
